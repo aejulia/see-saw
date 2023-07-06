@@ -67,7 +67,7 @@ section.normal {
 
 section.normal > p {
     display: inline-block;
-    padding: 30px;
+    padding: 5px;
 }
 
 section.imagem {
