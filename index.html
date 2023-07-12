@@ -21,35 +21,85 @@
     </header>
 
     <section class="normal">
-            <p>I see you (아니 넌 지금 내 앞에 없지)</p> <br>
-            <p>I saw you (that's right)</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">I see you (아니 넌 지금 내 앞에 없지)</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">I saw you (that's right)</p> <br>
     </section>
 
     <section class="imagem" id="img01">
-            <p>It's been a long day</p> <br>
-            <p>그다지 날 지치게 한 일 같은 건 없었지만</p> <br>
-            <p>It's been a long, long day</p> <br>
-            <p>오늘따라 커필 너무 많이 마신 걸까</p> <br>
-        
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">It's been a long day</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">그다지 날 지치게 한 일 같은 건 없었지만</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">It's been a long, long day</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">오늘따라 커필 너무 많이 마신 걸까</p> <br>
     </section>
 
     <section class="normal">
-            <p>진심으로 웃기도 해, 하지만 대부분의</p> <br>
-            <p>가짜 웃음으로 도배돼버린 하루</p> <br>
-            <p>내 기분은 시소같이 all day</p> <br>
-            <p>아마도 something makes me up and down</p> <br>
-            <p>니가 떠나간 다음 날부터</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">진심으로 웃기도 해, 하지만 대부분의</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">가짜 웃음으로 도배돼버린 하루 (yeah)</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">내 기분은 시소같이 all day</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">아마도 something makes me up and down</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">니가 떠나간 다음 날부터</p> <br>
     </section>
 
     <section class="imagem" id="img02">
-            <p>I see you (아니 넌 지금 내 앞에 없지)</p> <br>
-            <p>I saw you (that's right)</p> <br>
-            <p>I see you 내가 지금 꿈을 꾸는 건지</p> <br>
-            <p>I saw you</p> <br>
-            <p>I'm like seesaw</p> <br>
-            <p>오락가락 I'm like seesaw</p> <br>
-            <p>Up and down, I'm like seesaw</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">I see you (아니 넌 지금 내 앞에 없지)</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">I saw you (that's right)</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">I see you 내가 지금 꿈을 꾸는 건지</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">I saw you</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">I'm like seesaw</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">오락가락 I'm like seesaw</p> <br>
+        <p onmouseover="changeText(this)" onmouseout="restoreText(this)">Up and down, I'm like seesaw</p> <br>
     </section>
+
+    <script>
+        function changeText(element) {
+            // Salva o texto original
+            element.dataset.originalText = element.innerHTML;
+
+            // Altera o texto para frases diferentes, dependendo do elemento
+            if (element.innerHTML === "I see you (아니 넌 지금 내 앞에 없지)") {
+                element.innerHTML = "Eu te vejo (não, espere, você não está na minha frente agora)";
+            } else if (element.innerHTML === "I saw you (that's right)") {
+                element.innerHTML = "Eu te vi (está certo)";
+            } else if (element.innerHTML === "It's been a long day") {
+                element.innerHTML = "Tem sido um longo dia";
+            } else if (element.innerHTML === "그다지 날 지치게 한 일 같은 건 없었지만") {
+                element.innerHTML = "Não é como se fosse um dia que me deixa cansada mas";
+            } else if (element.innerHTML === "It's been a long, long day") {
+                element.innerHTML = "Tem sido um longo, longo dia";
+            } else if (element.innerHTML === "오늘따라 커필 너무 많이 마신 걸까") {
+                element.innerHTML = "Talvez seja apenas um daqueles dias em que tomei muito café";
+            } else if (element.innerHTML === "진심으로 웃기도 해, 하지만 대부분의") {
+                element.innerHTML = "Eu sorrio com sinceridade, mas a maior parte do dia";
+            } else if (element.innerHTML === "가짜 웃음으로 도배돼버린 하루 (yeah)") {
+                element.innerHTML = "É coberto por sorrisos falsos (sim)";
+            } else if (element.innerHTML === "내 기분은 시소같이 all day") {
+                element.innerHTML = "Eu me sinto como uma gangorra o dia todo";
+            } else if (element.innerHTML === "아마도 something makes me up and down") {
+                element.innerHTML = "Talvez algo me deixe para cima e para baixo";
+            } else if (element.innerHTML === "니가 떠나간 다음 날부터") {
+                element.innerHTML = "Desde o dia em que você me deixou";
+            } else if (element.innerHTML === "I see you (아니 넌 지금 내 앞에 없지)") {
+                element.innerHTML = "Eu te vejo (não, espere, você não está na minha frente agora)";
+            }  else if (element.innerHTML === "I saw you (that's right)") {
+                element.innerHTML = "Eu te vi (está certo)";
+            } else if (element.innerHTML === "I see you 내가 지금 꿈을 꾸는 건지") {
+                element.innerHTML = "Eu te vejo (estou sonhando nesse momento?)";
+            } else if (element.innerHTML === "I saw you") {
+                element.innerHTML = "Eu te vi";
+            } else if (element.innerHTML === "I'm like seesaw") {
+                element.innerHTML = "Me sinto como uma gangorra";
+            } else if (element.innerHTML === "오락가락 I'm like seesaw") {
+                element.innerHTML = "Para frente e para trás, me sinto como uma gangorra";
+            } else if (element.innerHTML === "Up and down, I'm like seesaw") {
+                element.innerHTML = "Para cima e para baixo, me sinto como uma gangorra";
+            }
+        }
+
+        function restoreText(element) {
+            // Restaura o texto original
+            element.innerHTML = element.dataset.originalText;
+        }
+    </script>
 
     <section class="normal">
             <p>Which is right? I see or saw you?</p> <br>
@@ -97,6 +147,7 @@
             No Copyright Infringement Intended. <br>
         </p>
     </footer>
-    
+
+
 </body>
 </html>
