@@ -9,6 +9,12 @@
     --fonte3: 'Poppins', sans-serif;
 }
 
+.minha-fonte {
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
 * {
     margin: 0px;
     padding: 0px;
